@@ -9,11 +9,6 @@
  */
 angular.module('angularPanoramioApp')
   .controller('MainCtrl', function ($scope, panoramioService) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
     var lat = 41.9011422;
     var lon = 12.481368999999972;
     var res = panoramioService.getMainPhoto(lat, lon);
